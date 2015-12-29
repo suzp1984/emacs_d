@@ -1,5 +1,5 @@
 ;; add load path
-;(add-to-list 'load-path "/home/zxsu/.emacs.d/emacs-lisp/android-kit/")
+; (add-to-list 'load-path  (expand-file-name "~/.emacs.d/emacs-lisp/android-kit/"))
 
 ;; android-comman.el android-compile.el android-host.el come from Google source code.
 ;; By default, google provide those cmd in Android development. but not for app developer.

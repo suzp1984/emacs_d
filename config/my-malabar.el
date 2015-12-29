@@ -11,7 +11,7 @@
       malabar-load-source-from-sibling-projects t)
 ;; add source/JAR path to malabar, for example android development.
 ;;(setq malabar-extra-source-locations '())
-;;(add-to-list 'malabar-extra-source-locations "/Users/jacobsu/software/adt-linux/adt-bundle-linux-x86_64-20130717/sdk/platforms/android-18/android.jar")
+;;(add-to-list 'malabar-extra-source-locations (expand-file-name "~/software/adt-linux/adt-bundle-linux-x86_64-20130717/sdk/platforms/android-18/android.jar"))
 (add-to-list 'malabar-extra-source-locations (expand-file-name "~/software/adt-linux/adt-bundle-linux-x86_64-20130717/sdk/sources/android-18/"))
 
 (add-to-list 'auto-mode-alist '("\\.java\\'" . malabar-mode))

@@ -36,8 +36,8 @@
 ;; (slime-startup-animation t)
 
 
-;; (add-to-list 'load-path "/Users/jacobsu/software/slime/contrib")
-;; (setq slime-backend "/Users/jacobsu/software/slime/swank-loader.lisp")
+;; (add-to-list 'load-path (expand-file-name "~/software/slime/contrib"))
+;; (setq slime-backend (expand-file-name "~/software/slime/swank-loader.lisp"))
 ;; (load "slime-autoloads")
 ;; (require 'slime)
 ;; (require 'slime-autoloads)

@@ -25,16 +25,16 @@
 ;;; Code:
 
 (add-to-list 'auto-mode-alist 
-             '("/Users/jacobsu/software/Qt5.1.1/5.1.1/clang_64/include" . c++-mode))
+             '((expand-file-name "~/software/Qt5.1.1/5.1.1/clang_64/include") . c++-mode))
 
 (semantic-add-system-include
- "/Users/jacobsu/software/Qt5.1.1/5.1.1/clang_64/include" 'c++-mode)
+ (expand-file-name  "~/software/Qt5.1.1/5.1.1/clang_64/include") 'c++-mode)
 
 (add-to-list 'semantic-lex-c-preprocessor-symbol-file
-             "/Users/jacobsu/software/Qt5.1.1/5.1.1/clang_64/include/QtCore/qconfig.h")
+             (expand-file-name "~/software/Qt5.1.1/5.1.1/clang_64/include/QtCore/qconfig.h"))
 
 (add-to-list 'semantic-lex-c-preprocessor-symbol-file
-             "/Users/jacobsu/software/Qt5.1.1/5.1.1/clang_64/include/QtCore/qconfig-dist.h")
+             (expand-file-name "~/software/Qt5.1.1/5.1.1/clang_64/include/QtCore/qconfig-dist.h"))
 
 (provide 'my-qt)
 ;;; my-qt.el ends here

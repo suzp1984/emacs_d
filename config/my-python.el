@@ -8,8 +8,8 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python-django.el"))
 (require 'python-django)
 (global-set-key (kbd "C-x j") 'python-django-open-project)
-;(add-to-list 'load-path "/Users/jacobsu/.emacs.d/emacs-lisp/python-mode.el-6.0.12/") 
-;(setq py-install-directory "/Users/jacobsu/.emacs.d/emacs-lisp/python-mode.el-6.0.12/")
+;(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python-mode.el-6.0.12/"))
+;(setq py-install-directory (expand-file-name "~/.emacs.d/emacs-lisp/python-mode.el-6.0.12/"))
 
 ;; python-mode settings
 ;; customize python-mode

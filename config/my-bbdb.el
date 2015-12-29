@@ -16,7 +16,7 @@
  bbdb-complete-name-allow-cycling t
  )
 
-;;(add-to-list 'Info-directory-list "/Users/jacobsu/.emacs.d/emacs-lisp/bbdb-2.35/texinfo")
+;; (add-to-list 'Info-directory-list (expand-file-name "~/.emacs.d/emacs-lisp/bbdb-2.35/texinfo"))
 (add-to-list 'Info-default-directory-list (expand-file-name "~/.emacs.d/emacs-lisp/bbdb-2.35/texinfo"))
 
 (setq gnus-score-find-score-files-function

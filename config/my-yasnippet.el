@@ -1,6 +1,6 @@
 ; my yasnippet settings
 ;; (add-to-list 'load-path
-;;              "/home/zxsu/.emacs.d/elpa/yasnippet-0.8.0")
+;;              (expand-file-name "~/.emacs.d/elpa/yasnippet-0.8.0"))
 (require 'yasnippet)
 ;;(yas-global-mode 1)
 

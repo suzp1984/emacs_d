@@ -1,4 +1,4 @@
-(add-to-list 'load-path "/Users/jacobsu/.emacs.d/emacs-lisp/dictem-1.0.4/")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/dictem-1.0.4/"))
 
 ; Loading dictem functions
 (require 'dictem)
