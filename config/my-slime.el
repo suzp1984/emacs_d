@@ -1,5 +1,5 @@
 ;; my slime settings
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/slime-2012-09-09"))  ; your SLIME directory
+; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/slime-2012-09-09"))  ; your SLIME directory
 (load (expand-file-name "~/quicklisp/slime-helper"))
 ;; Replace "sbcl" with the path to your implementation
 (setq inferior-lisp-program "sbcl")

@@ -1,10 +1,10 @@
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/cedet-1.1/common/"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/cedet-1.1/eieio/"))
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/cedet-1.1/common/"))
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/cedet-1.1/eieio/"))
 ;;(setq semantic-load-turn-everything-on t)
 ;(require 'eieio-load)
 ;(require 'cedet)
-(load-file (expand-file-name "~/.emacs.d/emacs-lisp/cedet-1.1/common/cedet.el"))
+;; (load-file (expand-file-name "~/.emacs.d/emacs-lisp/cedet-1.1/common/cedet.el"))
 ;;(require 'semantic-ia)
 
 (require 'semantic)
