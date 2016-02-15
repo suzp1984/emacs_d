@@ -15,3 +15,12 @@
 ;; (package-install 'cedet) ;; cedet is built-in
 
 (package-install 'slime)
+(package-install 'jdee)
+(package-install 'yasnippet)
+(package-install 'auto-complete)
+(package-install 'paredit)
+(package-install 'ac-slime)
+(package-install 'auctex)
+(package-install 'cdlatex)
+(package-install 'o-blog)
+(package-install 'emms)

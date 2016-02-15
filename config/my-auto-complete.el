@@ -8,7 +8,7 @@
 ;;      (auto-complete-mode t))
 ;; )
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/auto-complete-1.3.1"))
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/auto-complete-1.3.1"))
 
 (require 'auto-complete-config)
 (ac-config-default)

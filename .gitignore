@@ -9,3 +9,7 @@
 
 eshell/
 elpa/
+
+# data files
+ac-comphist.dat
+ede-projects.el

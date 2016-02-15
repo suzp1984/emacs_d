@@ -1,6 +1,6 @@
 ;; my org settings
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-8.2.2/lisp"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-8.2.2/contrib/lisp"))
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-8.2.2/lisp"))
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-8.2.2/contrib/lisp"))
 
 (require 'org-install)
 

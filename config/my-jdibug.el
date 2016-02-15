@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/jdibug-0.5/"))
+;(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/jdibug-0.5/"))
 (require 'jdibug)
 
 (provide 'my-jdibug)
