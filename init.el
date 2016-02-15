@@ -50,7 +50,7 @@
   (require 'my-gnuplot)
   (require 'my-emms)
   (require 'my-auctex)
-  (require 'my-android)
+  ; (require 'my-android)
   (require 'my-python)
   (require 'my-package)
   ;(require 'my-ess)

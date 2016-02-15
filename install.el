@@ -24,3 +24,6 @@
 (package-install 'cdlatex)
 (package-install 'o-blog)
 (package-install 'emms)
+(package-install 'python)
+(package-install 'python-django)
+

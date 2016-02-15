@@ -1,11 +1,11 @@
 ;; fix bugs in compatible between python-mode and semantic
 ;;(autoload 'python-proc "python" "autoload python-proc to resolve python-mode and sematinc conflic" nil nil)
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python.el/"))
+; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python.el/"))
 
 (require 'python)
 (require 'ob-python)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python-django.el"))
+; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python-django.el"))
 (require 'python-django)
 (global-set-key (kbd "C-x j") 'python-django-open-project)
 ;(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/python-mode.el-6.0.12/"))
