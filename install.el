@@ -34,3 +34,4 @@
 (package-install 'groovy-mode)
 (package-install 'markdown-mode)
 (package-install 'magit)
+(package-install 'ctypes)

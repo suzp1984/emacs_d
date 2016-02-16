@@ -71,6 +71,8 @@
   ;(require 'my-groovy)
   (require 'my-markdown)
 
+  (require 'my-ctypes)
+  
   ;(require 'xcscope)
   ;(add-hook 'java-mode-hook (function cscope:hook))
   ;(add-hook 'jde-mode-hook (function cscope:hook))
@@ -80,11 +82,9 @@
 (add-hook 'after-init-hook 
           'load-my-config)
 
-
 ;; global convenient navigation jump settings
 (global-set-key [(control ?\.)] 'ska-point-to-register)
 (global-set-key [(control ?\,)] 'ska-jump-to-register)
-
 
 (defun ska-point-to-register()
   "Store cursorposition _fast_ in a register. 
@@ -101,8 +101,7 @@
     (jump-to-register 8)
     (set-register 8 tmp)))
 
-(require 'ctypes)
-(ctypes-auto-parse-mode 1)
+
 
 ;; custome settings 
 (custom-set-variables
