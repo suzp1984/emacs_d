@@ -13,3 +13,10 @@ elpa/
 # data files
 ac-comphist.dat
 ede-projects.el
+
+emms/
+ido.last
+org-clock-save.el
+
+# ignore my personal elisp modules
+/emacs-lisp/tts-mode

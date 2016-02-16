@@ -59,7 +59,7 @@
   (require 'my-bbdb)
   (require 'my-eshell)
   (require 'my-jabber)
-  (require 'my-tts)
+  ;(require 'my-tts)
   ;(require 'my-dictem)
   (require 'my-ruby)
   (require 'my-js)

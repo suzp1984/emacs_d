@@ -26,4 +26,5 @@
 (package-install 'emms)
 (package-install 'python)
 (package-install 'python-django)
-
+(package-install 'bbdb)
+(package-install 'jabber)

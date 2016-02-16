@@ -1,8 +1,6 @@
-(add-to-list 'load-path
-             (expand-file-name "~/.emacs.d/emacs-lisp/bbdb-2.35/lisp/"))
 
 (require 'bbdb)
-(require 'bbdb-autoloads)
+;; (require 'bbdb-autoloads)
 (setq
  bbdb-file "~/.bbdb"
  bbdb-gui t
@@ -17,7 +15,7 @@
  )
 
 ;; (add-to-list 'Info-directory-list (expand-file-name "~/.emacs.d/emacs-lisp/bbdb-2.35/texinfo"))
-(add-to-list 'Info-default-directory-list (expand-file-name "~/.emacs.d/emacs-lisp/bbdb-2.35/texinfo"))
+;; (add-to-list 'Info-default-directory-list (expand-file-name "~/.emacs.d/emacs-lisp/bbdb-2.35/texinfo"))
 
 (setq gnus-score-find-score-files-function
       '(gnus-score-find-bnews bbdb/gnus-score))
