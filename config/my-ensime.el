@@ -24,9 +24,9 @@
 
 ;;; Code:
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/ensime_emacs/elisp/"))
+;; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/ensime_emacs/elisp/"))
 (let ((sbt-bin "/usr/local/bin/")
-      (scala-bin "/Users/moses/software/scala-2.11.2/bin/"))
+      (scala-bin (expand-file-name "~/software/scala-2.11.7/bin/")))
   (progn (push sbt-bin exec-path)
          (push scala-bin exec-path))
   )

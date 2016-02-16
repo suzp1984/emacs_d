@@ -30,3 +30,7 @@
 (package-install 'jabber)
 (package-install 'rvm)
 (package-install 'js2-mode)
+(package-install 'ensime)
+(package-install 'groovy-mode)
+(package-install 'markdown-mode)
+(package-install 'magit)

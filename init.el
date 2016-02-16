@@ -68,7 +68,7 @@
   ;(require 'my-fs-mode)
   (require 'my-elnode)
   (require 'my-ensime)
-  (require 'my-groovy)
+  ;(require 'my-groovy)
   (require 'my-markdown)
 
   ;(require 'xcscope)
