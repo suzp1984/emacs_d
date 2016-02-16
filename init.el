@@ -65,7 +65,7 @@
   (require 'my-js)
   (require 'my-el-get)
   (require 'my-auto-insert)
-  (require 'my-fs-mode)
+  ;(require 'my-fs-mode)
   (require 'my-elnode)
   (require 'my-ensime)
   (require 'my-groovy)

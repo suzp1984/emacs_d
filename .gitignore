@@ -18,5 +18,7 @@ emms/
 ido.last
 org-clock-save.el
 
+el-get/
+
 # ignore my personal elisp modules
 /emacs-lisp/tts-mode

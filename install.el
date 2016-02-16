@@ -28,3 +28,5 @@
 (package-install 'python-django)
 (package-install 'bbdb)
 (package-install 'jabber)
+(package-install 'rvm)
+(package-install 'js2-mode)
