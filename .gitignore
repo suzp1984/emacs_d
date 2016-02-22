@@ -22,3 +22,5 @@ el-get/
 
 # ignore my personal elisp modules
 /emacs-lisp/tts-mode
+
+.session
