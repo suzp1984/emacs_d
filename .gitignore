@@ -24,3 +24,4 @@ el-get/
 /emacs-lisp/tts-mode
 
 .session
+tramp
