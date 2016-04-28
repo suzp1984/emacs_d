@@ -1,0 +1,4 @@
+alias lll ll $*
+alias l ls -al $*
+alias ll ls -al $*
+alias lls $*

@@ -7,7 +7,9 @@
 # emacs backup file
 *~
 
-eshell/
+# eshell/
+eshell/history
+eshell/lastdir
 elpa/
 
 # data files
@@ -25,3 +27,4 @@ el-get/
 
 .session
 tramp
+session.*
