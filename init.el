@@ -21,11 +21,11 @@
 (mouse-avoidance-mode 'animate)
 
 ;; set env PATH and exec-path variable
-(add-to-list 'exec-path "/opt/local/bin/")
-(add-to-list 'exec-path "/usr/local/bin/")
-(setenv "PATH" 
-        (concat "/opt/local/bin/:/usr/local/bin/:"
-                (getenv "PATH")))
+; (add-to-list 'exec-path "/opt/local/bin/")
+; (add-to-list 'exec-path "/usr/local/bin/")
+;(setenv "PATH" 
+;        (concat "/opt/local/bin/:/usr/local/bin/:"
+;                (getenv "PATH")))
 
 ;; add custome config file into load-path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/config"))
@@ -36,7 +36,7 @@
   (require 'my-cedet)
   (require 'my-misc)
   (require 'my-scon)
-  (require 'my-slime)
+  ;; (require 'my-slime)
   ; (require 'my-jdibug)
   (require 'my-jdee)
   ;;(require 'my-malabar)
@@ -51,7 +51,7 @@
   (require 'my-emms)
   (require 'my-auctex)
   ; (require 'my-android)
-  (require 'my-python)
+  ;; (require 'my-python)
   (require 'my-package)
   ;(require 'my-ess)
   ;;(require 'my-dict)
@@ -63,7 +63,7 @@
   ;(require 'my-dictem)
   (require 'my-ruby)
   (require 'my-js)
-  (require 'my-el-get)
+  ;; (require 'my-el-get)
   (require 'my-auto-insert)
   ;(require 'my-fs-mode)
   (require 'my-elnode)
@@ -71,7 +71,7 @@
   ;(require 'my-groovy)
   (require 'my-markdown)
 
-  (require 'my-ctypes)
+  ;(require 'my-ctypes)
   
   ;(require 'xcscope)
   ;(add-hook 'java-mode-hook (function cscope:hook))
