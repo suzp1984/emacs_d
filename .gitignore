@@ -28,3 +28,4 @@ el-get/
 .session
 tramp
 session.*
+server/
