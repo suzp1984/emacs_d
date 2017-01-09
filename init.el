@@ -4,8 +4,20 @@
 ;; (setq mac-command-modifier 'meta)
 
 ;; set your own personal info
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (setq user-full-name "zxsu")
 (setq user-mail-address "suzp1984@gmail.com")
+
+(setq default-buffer-file-coding-system 'utf-8)
+(setq buffer-file-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+(set-fontset-font t 'han (font-spec :family "Microsoft Yahei" :size 16))
 
 (setq visible-bell t)
 (setq inhibit-startup-message t)
