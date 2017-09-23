@@ -1,7 +1,14 @@
 
 ;; emacs control-key settings for Mac OS X, uncomment following two lines for MacOS
-;; (setq mac-option-modifier 'control)
-;; (setq mac-command-modifier 'meta)
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
+(setq mac-option-modifier 'control)
+(setq mac-command-modifier 'meta)
 
 ;; set your own personal info
 (setq user-full-name "zxsu")
@@ -21,8 +28,8 @@
 (mouse-avoidance-mode 'animate)
 
 ;; set env PATH and exec-path variable
-(add-to-list 'exec-path "/opt/local/bin/")
-(add-to-list 'exec-path "/usr/local/bin/")
+; (add-to-list 'exec-path "/opt/local/bin/")
+; (add-to-list 'exec-path "/usr/local/bin/")
 (setenv "PATH" 
         (concat "/opt/local/bin/:/usr/local/bin/:"
                 (getenv "PATH")))
@@ -32,13 +39,21 @@
 ;; add rare third-part lib
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp"))
 
+;; Define he following variables to remove the compile-log warnings
+;; when defining ido-ubiquitous
+(defvar ido-cur-item nil)
+(defvar ido-default-item nil)
+(defvar ido-cur-list nil)
+(defvar predicate nil)
+(defvar inherit-input-method nil)
+
 (defun load-my-config ()
   (require 'my-cedet)
   (require 'my-misc)
   (require 'my-scon)
-  (require 'my-slime)
+  ; (require 'my-slime)
   ; (require 'my-jdibug)
-  (require 'my-jdee)
+  ; (require 'my-jdee)
   ;;(require 'my-malabar)
   (require 'wangyin-setting)
   ; (require 'my-yasnippet)
@@ -70,8 +85,9 @@
   (require 'my-ensime)
   ;(require 'my-groovy)
   (require 'my-markdown)
+  (require 'my-clojure)
 
-  (require 'my-ctypes)
+  ; (require 'my-ctypes)
   
   ;(require 'xcscope)
   ;(add-hook 'java-mode-hook (function cscope:hook))
@@ -109,7 +125,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
+ '(ansi-color-names-vector
+   ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(auto-insert (quote other))
  '(auto-insert-directory (expand-file-name "~/.emacs.d/insert-template/"))
  '(case-fold-search t)
@@ -118,9 +135,14 @@
  '(elnode-do-init t)
  '(elnode-init-host "0.0.0.0")
  '(elnode-init-port 8702)
- '(erc-modules (quote (autojoin button completion fill irccontrols list match menu move-to-prompt netsplit networks noncommands readonly ring smiley sound stamp spelling track)))
+ '(erc-modules
+   (quote
+    (autojoin button completion fill irccontrols list match menu move-to-prompt netsplit networks noncommands readonly ring smiley sound stamp spelling track)))
  '(frame-background-mode (quote dark))
  '(org-drill-optimal-factor-matrix nil)
+ '(package-selected-packages
+   (quote
+    (exec-path-from-shell tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode ctypes magit markdown-mode ensime js2-mode rvm jabber bbdb python-django python emms o-blog cdlatex auctex ac-slime paredit auto-complete yasnippet jdee slime elnode)))
  '(rst-level-face-base-color "grey")
  '(send-mail-function (quote smtpmail-send-it))
  '(session-use-package t nil (session)))

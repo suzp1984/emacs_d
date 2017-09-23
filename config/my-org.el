@@ -106,7 +106,4 @@
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-S5"))
 (require 'org-export-as-s5)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/o-blog"))
-(require 'o-blog)
-
 (provide 'my-org)
