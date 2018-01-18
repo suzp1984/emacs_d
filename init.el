@@ -28,11 +28,14 @@
 (mouse-avoidance-mode 'animate)
 
 ;; set env PATH and exec-path variable
-; (add-to-list 'exec-path "/opt/local/bin/")
-; (add-to-list 'exec-path "/usr/local/bin/")
+(add-to-list 'exec-path "/opt/local/bin/")
+(add-to-list 'exec-path "/usr/local/bin/")
 (setenv "PATH" 
         (concat "/opt/local/bin/:/usr/local/bin/:"
                 (getenv "PATH")))
+
+(require 'gnutls)
+(add-to-list 'gnutls-trustfiles "/usr/local/etc/openssl@1.1/cert.pem")
 
 ;; add custome config file into load-path
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/config"))
@@ -66,7 +69,7 @@
   (require 'my-emms)
   (require 'my-auctex)
   ; (require 'my-android)
-  (require 'my-python)
+  ; (require 'my-python)
   (require 'my-package)
   ;(require 'my-ess)
   ;;(require 'my-dict)
@@ -81,7 +84,7 @@
   (require 'my-el-get)
   (require 'my-auto-insert)
   ;(require 'my-fs-mode)
-  (require 'my-elnode)
+  ;(require 'my-elnode)
   (require 'my-ensime)
   ;(require 'my-groovy)
   (require 'my-markdown)
@@ -142,7 +145,7 @@
  '(org-drill-optimal-factor-matrix nil)
  '(package-selected-packages
    (quote
-    (exec-path-from-shell tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode ctypes magit markdown-mode ensime js2-mode rvm jabber bbdb python-django python emms o-blog cdlatex auctex ac-slime paredit auto-complete yasnippet jdee slime elnode)))
+    (elpy groovy-mode exec-path-from-shell tagedit rainbow-delimiters projectile smex ido-ubiquitous cider clojure-mode-extra-font-locking clojure-mode ctypes magit markdown-mode ensime js2-mode rvm jabber bbdb python-django python emms o-blog cdlatex auctex ac-slime paredit auto-complete yasnippet jdee slime elnode)))
  '(rst-level-face-base-color "grey")
  '(send-mail-function (quote smtpmail-send-it))
  '(session-use-package t nil (session)))

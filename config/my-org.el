@@ -103,7 +103,7 @@
 (require 'ob-sh)
 
 ;; add Eric Schulte's org-S5, which export html as slide show 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-S5"))
-(require 'org-export-as-s5)
+; (add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-lisp/org-S5"))
+; (require 'org-export-as-s5)
 
 (provide 'my-org)
